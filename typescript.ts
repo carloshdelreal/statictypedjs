@@ -28,3 +28,43 @@ let wizzard: object = {
 
 let meh: undefined = undefined;
 let noo: null = null;
+
+// tuple
+let basket: [string, number];
+basket = ['basketball', 5]
+
+// Enum
+enum Size { Small = 1, Medium = 2, Large = 3}
+let sizeName: string = Size[2]
+let sizeSize: number = Size.Small
+
+// Any type !!!!!!! be careful
+let whatever: any = 'buahahahahah'
+whatever = 2
+whatever = null
+
+// void
+let sing = (): void => {
+  console.log("la la laaa")
+}
+
+// never
+let error = (): never => {
+  throw Error('oops')
+}
+
+
+// interface
+interface RobotArmy {
+  count: number,
+  type: string,
+  magic: string
+}
+
+let fightRobotArmy = (robots: RobotArmy) => {
+  console.log("Fight")
+}
+
+let fightRobotArmy2 = ( robots: { count: number, type: string, magic: string}) => {
+  console.log('Fight')
+}

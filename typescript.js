@@ -19,3 +19,33 @@ var wizzard = {
 // null and undefined
 var meh = undefined;
 var noo = null;
+// tuple
+var basket;
+basket = ['basketball', 5];
+// Enum
+var Size;
+(function (Size) {
+    Size[Size["Small"] = 1] = "Small";
+    Size[Size["Medium"] = 2] = "Medium";
+    Size[Size["Large"] = 3] = "Large";
+})(Size || (Size = {}));
+var sizeName = Size[2];
+var sizeSize = Size.Small;
+// Any type !!!!!!! be careful
+var whatever = 'buahahahahah';
+whatever = 2;
+whatever = null;
+// void
+var sing = function () {
+    console.log("la la laaa");
+};
+// never
+var error = function () {
+    throw Error('oops');
+};
+var fightRobotArmy = function (robots) {
+    console.log("Fight");
+};
+var fightRobotArmy2 = function (robots) {
+    console.log('Fight');
+};
